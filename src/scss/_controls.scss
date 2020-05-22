@@ -1,0 +1,28 @@
+
+.carousel-controls {
+  position: static;
+}
+
+.carousel {
+  .carousel-controls {
+	display: none;
+  }
+
+  &.active {
+	.carousel-controls {
+	  display: block;
+	}
+  }
+
+
+  .carousel-control-next,
+  .carousel-control-prev {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+
+  .carousel-control-next {
+	right: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  overflow: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+
+
+  &::-webkit-scrollbar {
+	display: none;
+	-webkit-appearance: none;
+	width: 0;
+	height: 0;
+  }
+
+  &.drag-event {
+	scroll-behavior: auto;
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+	user-select: none;
+  }
+}
